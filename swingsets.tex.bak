@@ -1,0 +1,61 @@
+% document came from
+%	https://publishingsupport.iopscience.iop.org/questions/latex-template/
+% via 
+% 	https://publishingsupport.iopscience.iop.org/journals/physics-education/
+\documentclass[12pt]{iopart}
+\begin{document}
+
+\title[Using Open Source Intelligence Techniques to evaluate Physics Calculations]{Using Open Source Intelligence Techniques to evaluate Physics Calculations}
+
+\author{Nathan T. Moore}
+
+\address{
+	Physics and General Engineering, 
+	Winona State University,
+	Winona, MN 55987 USA
+}
+\ead{nmoore@winona.edu}
+\vspace{10pt}
+\begin{indented}
+\item[\today]
+\end{indented}
+
+\begin{abstract}
+Checking the answer at the end of a calculation is an oft neglected part of a calculation, and getting students to engage in this behavior can be difficult when they are already intellectually tired. 
+	The paper briefly describes a graphingi, linearization, and contol of variables activity related to pendulums, cauched as ``swingset" design. 
+	After a reliable $swingtime \sim \sqrt{length}$ model has been established, students apply the model to a youtube video to predict the height of a bridge. 
+	Then, to reinforce the ideas of multiple representations, and multiple lines of evidence within an arguement, students are asked to use Google Maps and other online resources to estimate the height of the bridge. 
+	Looking for overlap between online estimations and physical models from the lab is powerful. 
+	At the end of the exercise, students have had a breif introduction to ``Open Source Intelligence" techniques that are commonly used by news and intelligence organizations. 
+\end{abstract}
+
+%
+% Uncomment for keywords
+%\vspace{2pc}
+%\noindent{\it Keywords}: XXXXXX, YYYYYYYY, ZZZZZZZZZ
+%
+% Uncomment for Submitted to journal title message
+%\submitto{\JPA}
+%
+% Uncomment if a separate title page is required
+%\maketitle
+% 
+% For two-column output uncomment the next line and choose [10pt] rather than [12pt] in the \documentclass declaration
+%\ioptwocol
+%
+
+
+
+\section{Swingset Exercise}
+
+\subsection{Class Context}
+
+\section{Preparing your article}
+
+\subsection{Sample coding for the start of an article}
+  
+
+\clearpage
+
+\end{document}
+
