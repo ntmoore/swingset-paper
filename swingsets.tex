@@ -62,7 +62,7 @@ Checking the answer at the end of a calculation is an oft neglected part of a ca
 Early in a Physical Science or Introductory Physics-Mechanics class, we introduce and practice control of variables, graphing, and linearization concepts by asking students to think about designing a new swingset for an elementary school playground.  
 An exciting swingset takes a long time to swing back and forth and we call this ``swingtime" the output variable we want to be able to predict.
 Formally, a swingset is typically modeled as a pendulum with period 
-$T \sim \sqrt{L}$ \cite{openstax_pendulum} but as this activity usually occurs in the first few weeks of the class, we avoid using this distracting technical jargon.
+$T \sim \sqrt{L}$ \cite{openstax_pendulum} but as this activity usually occurs in the first few weeks of the class, we avoid any mention of the technical story that for small oscillations a pendulum's period is $T\simeq 2\pi \sqrt{L/g}$.
 
 \begin{figure}[h]
 \centering
@@ -90,28 +90,36 @@ Typical student data, using metal washers and string to model the motion of a sw
         \label{swingtime_graph}
 \end{figure}
 
-Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' data has been collected with metal washers and string, with none of the model swingsets greater than about $100cm$ in length. The data in figure \ref{swingtime_graph} looks fairly linear, and when asked  to predict the swingtime for a $200cm$ length, students typically either draw a line or use a linear math model.  
+Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' data has been collected with metal washers and string, with none of the swingsets larger than about $100cm$ in length. The data in figure \ref{swingtime_graph} looks fairly linear, and when asked  to predict the swingtime for a $200cm$ length, students typically either draw a line or use a linear math model, also shown in figure \ref{swingtime_graph}.  
 
-As seen, the linear model fails at longer lengths. Resolution comes via two pieces of data.  First, if a swingset has ``almost no length" students will generally volunteer that it takes ``almost no time" to swing back and forth.  This means that the length=0, swingtime=0 intercept is physically real and should be included in fitting efforts.  
+This linear model fails at longer swingset lengths. Resolution comes via two pieces of data.  First, if a swingset has ``almost no length" students will generally volunteer that it takes ``almost no time" to swing back and forth.  This means that the $length=0$, $swingtime=0$ intercept is physically real and should be included in fitting efforts.  
 
-Second, when the $200cm$ and $500cm$ points are included in the graph, students can be coached to reccollect that the data reminds them of a parabola that has been rotated to open towards the positive x-axis of the graph.  In Pre-Calculus or Algebra 2 this mathematical form is often written as a $y^2=x$ or $y=\sqrt{x}$ relationship.  
+Second, when results from swingset lengths of $200cm$, $300cm$ and $400cm$ are included in the graph, students can be coached to reccollect that the data reminds them of a parabola that has been rotated to open towards the positive x-axis of the graph.  In Pre-Calculus or Algebra 2 classes this mathematical form is often written as a $y^2=x$ or $y=\sqrt{x}$ relationship.  
 
-This discussion is implemented in a linearized graph, seen in figure \ref{linearized_swingtime_graph}. 
+To test this ``curvy'' relationship between swingtime and length, we ask the students to create the graph shown in figure \ref{linearized_swingtime_graph} in which the data has been ``linearized'' by plotting $\sqrt{L}$ instead of $L$.  In our experience, many students have not seen a non-linear proportionality ``in the wild'' before, and this can be a challenging concept to discuss -- particularly when thinking about the units involved in linearized trendlines!   
 
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\columnwidth]{linearized_swingtime_graph.pdf}
 \caption{
-	Linearized swingset data from a class.  Note that $200cm$ and $500cm$ lengths are included and described well bu the trendline.  The ``almost no length" swingset that takes ``almost no time" to swing is also nicely included.   
+	Linearized swingset data from a class.  Note that $200cm$, $300cm'$ and $400cm$ lengths are included and described well by the $\sqrt{L}$ trendline -- so long as the intial relase angle is small.  The ``almost no length" swingset that takes ``almost no time" to swing is also nicely included.   
 	}
 	\label{linearized_swingtime_graph}
 \end{figure}
 
+A nice final test of the linearized model for swingtime is to use a $10m$ surveyor's tape measure as a 3-story high swingset.  As seen in figure \ref{linearized_swingtime_graph}, even this data is reasonably described by the linearized model.  Note, most of this work depends on the students using a relatively small initial release angle.  If students decide to release a swingset from horizontal, the $\sqrt{L}$ dependance will be harder to see, which is again visible in figure \ref{linearized_swingtime_graph}.
 
-Thus far the 
 
-\subsection{predicting youtube video height}
+\section{Predicting the height of a swingset}
+With a reliable model for swingsets developed, a common follow-up assignment is to estimate the height of a bridge or arch from video of people swinging below it.  Two specific examples we've used one in Sault St. Marie, \cite{swingset-sault-ste-marie}, and another near Moab, \cite{swingset-Moab}, are available on youtube.  
 
+At this point, from their data analysis, students know that swingtime, $T$, and swingset length are described by an expression similar to the following (with slightly different slopes, depending on student measurements)
+\bea
+T &\simeq& \left( 0.20\frac{seconds}{\sqrt{cm}} \right) \sqrt{L}, or\\
+L &\simeq& \left( 25 \frac{cm}{sec^2} \right) T^2.
+\eea
+Then, if a student is able to meansure the time corresponding to half or a quarter of a swing from the video, they can use the model to predict the swing's height.  As an example, the man in the Sault Ste. Marie video seems to take about 5 seconds to make half a swing (from 0:36 to 0:40 in the video)\cite{details}.  With a period of $T=8s$, students can predict a swingset length of about $1600cm=16m$.  
+The video in Moab can be similarly analyzed.   
 
 \section{Evaluating answer using Open Source Intelligence}
 
@@ -143,6 +151,19 @@ https://openstax.org/books/college-physics-2e/pages/16-4-the-simple-pendulum
 	https://en.wikipedia.org/wiki/Swing\_(seat)
 		Swing (seat)
 
+\bibitem{swingset-sault-ste-marie}
+https://www.youtube.com/watch?v=arxiDyDouHo
+Sault Ste Marie's Biggest Swing Set
+Dylan Mcintomney
+Oct 29, 2014
+
+\bibitem{swingset-Moab}
+https://www.youtube.com/watch?v=4B36Lr0Unp4
+World's Largest Rope Swing
+devinsupertramp (Devin Graham)
+Feb 15, 2012
+
+\cite{details} If you download the video from YouTube and import it into Vernier's LoggerPro, it looks like a half swing runs from 36.603s to 39.973s, a $T/2=3.37s$ or $T\approx6.74s$.  
 \end{thebibliography}
 
 
