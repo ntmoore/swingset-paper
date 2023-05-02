@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=latex 2023.5.1)  1 MAY 2023 10:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.5.1)  2 MAY 2023 08:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -40,23 +40,18 @@ Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: dvips.def on input line 107.
+Package graphics Info: Driver file: pdftex.def on input line 107.
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen139
 \Gin@req@width=\dimen140
 )
-(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-dvips.def
-File: l3backend-dvips.def 2022-01-12 L3 backend support: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count194
 \l__pdf_internal_box=\box50
-\g__pdf_backend_object_int=\count194
-\l__pdf_backend_content_box=\box51
-\l__pdf_backend_model_box=\box52
-\g__pdf_backend_annotation_int=\count195
-\g__pdf_backend_link_int=\count196
-\g__pdf_backend_link_sf_int=\count197
 )
 (./swingsets.aux)
 \openout1 = `swingsets.aux'.
@@ -75,6 +70,29 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
 LaTeX Font Info:    ... okay on input line 19.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count195
+\scratchdimen=\dimen141
+\scratchbox=\box51
+\nofMPsegments=\count196
+\nofMParguments=\count197
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count198
+\MPscratchDim=\dimen142
+\MPnumerator=\count199
+\makeMPintoPDFobject=\count266
+\everyMPtoPDFconversion=\toks18
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -85,34 +103,74 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 65.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 65.
- [1
+<Fragonard,_The_Swing.jpg, id=1, 1027.84pt x 1290.8225pt>
+File: Fragonard,_The_Swing.jpg Graphic file (type jpg)
+<use Fragonard,_The_Swing.jpg>
+Package pdftex.def Info: Fragonard,_The_Swing.jpg  used on input line 69.
+(pdftex.def)             Requested size: 446.39996pt x 560.61693pt.
 
-] [2]
-Underfull \hbox (badness 1248) in paragraph at lines 109--112
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<linear_swingtime_graph.pdf, id=2, 462.52798pt x 346.89601pt>
+File: linear_swingtime_graph.pdf Graphic file (type pdf)
+<use linear_swingtime_graph.pdf>
+Package pdftex.def Info: linear_swingtime_graph.pdf  used on input line 85.
+(pdftex.def)             Requested size: 446.39996pt x 334.81607pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[1
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2 <./Fragonard,_The_Swing
+.jpg>]
+<linearized_swingtime_graph.pdf, id=20, 462.52798pt x 346.89601pt>
+File: linearized_swingtime_graph.pdf Graphic file (type pdf)
+<use linearized_swingtime_graph.pdf>
+Package pdftex.def Info: linearized_swingtime_graph.pdf  used on input line 103
+.
+(pdftex.def)             Requested size: 446.39996pt x 334.81607pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[3 <./linear_swingtime_graph.pdf>] [4 <./linearized_swingtime_graph.pdf>]
+Underfull \hbox (badness 1248) in paragraph at lines 133--136
 []\OT1/cmr/m/n/10 College Physics 2e 16.4 The Simple Pendulum https://openstax.
 org/books/college-physics-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 114--117
+Underfull \hbox (badness 10000) in paragraph at lines 138--141
 []\OT1/cmr/m/n/10 https://commons.wikimedia.org/wiki/File:Fragonard,[]The[]Swin
 g.jpg Jean-Honor^^Se Frag-o-nard:
  []
 
-[3
+[5
 
-] (./swingsets.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./swingsets.aux) ) 
 Here is how much of TeX's memory you used:
- 1139 strings out of 480248
- 16003 string characters out of 5896178
- 317146 words of memory out of 5000000
- 19132 multiletter control sequences out of 15000+600000
+ 1577 strings out of 480247
+ 22676 string characters out of 5896152
+ 320277 words of memory out of 5000000
+ 19552 multiletter control sequences out of 15000+600000
  473731 words of font info for 43 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 55i,5n,62p,293b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,6n,62p,447b,389s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+bx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on swingsets.pdf (5 pages, 608222 bytes).
+PDF statistics:
+ 174 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
-Output written on swingsets.dvi (3 pages, 5548 bytes).
