@@ -41,28 +41,16 @@ Looking for overlap between online estimations and physical models from the lab 
 At the end of the exercise, students have had a brief introduction to ``Open Source Intelligence" techniques that are commonly used by news and intelligence organizations. 
 \end{abstract}
 
-%
-% Uncomment for keywords
-%\vspace{2pc}
-%\noindent{\it Keywords}: XXXXXX, YYYYYYYY, ZZZZZZZZZ
-%
-% Uncomment for Submitted to journal title message
-%\submitto{\JPA}
-%
-% Uncomment if a separate title page is required
-%\maketitle
-% 
-% For two-column output uncomment the next line and choose [10pt] rather than [12pt] in the \documentclass declaration
-%\ioptwocol
-%
-
 
 
 \section{Swingset Exercise}
 Early in a Physical Science or Introductory Physics-Mechanics class, we introduce and practice control of variables, graphing, and linearization concepts by asking students to think about designing a new swingset for an elementary school playground.  
 An exciting swingset takes a long time to swing back and forth and we call this ``swingtime" the output variable we want to be able to predict.
 Formally, a swingset is typically modeled as a pendulum with period 
-$T \sim \sqrt{L}$ \cite{openstax_pendulum, pivot_pendulum} but as this activity usually occurs in the first few weeks of the class, we avoid any mention of the technical story that for small oscillations a pendulum's period is $T\simeq 2\pi \sqrt{L/g}$.
+$T \sim \sqrt{L}$ 
+\cite{openstax_pendulum, pivot_pendulum} 
+but as this activity usually occurs in the first few weeks of the class, 
+we avoid any mention of the technical story that for small oscillations a pendulum's period is $T\simeq 2\pi \sqrt{L/g}$.
 
 \begin{figure}[h]
 \centering
@@ -76,7 +64,7 @@ In North America, a ``swingset" or ``swing" is a mass-rope pendulum system that 
 \label{buffet}
 \end{figure}
 
-When asked about possible input variables on which swingtime might depend, students will often talk about mass, weight, initial height and angle, whether you start from rest or with an initial push, and length.  
+When asked about possible input variables on which swingtime might depend, students will often talk about mass, weight, initial height and angle, whether you start from rest or with an initial push, and length.  A video introduction to Estonia sport of Kiiking \cite{Kiiking} can be a great anchoring event for this disucssion.
 After brief investigations, the students typically settle on initial angle, mass, and length as the most important variables needed to predict swingtime.  
 With further data collection, the class can narrow down the length of the swing's cable as the most important variable.  
 
@@ -156,7 +144,6 @@ Or pine tree?
 Many students have done a google search for "height of Sault St. Marie bridge'' or similar.  Google seems to interpret this as the height of the "International" road bridge across the Soo locks 
 \href{https://en.wikipedia.org/wiki/Sault_Ste._Marie_International_Bridge}{https://en.wikipedia.org/wiki/Sault\_Ste.\_Marie\_International\_Bridge}
 , whch is reported to be 124 feet (38m) in height.  This is obviously not the correct bridge in the video.
-
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\columnwidth]{Google_International_Soo_bridge.png}
@@ -166,9 +153,57 @@ Google results for ``height of Sault St. Marie bridge" are obviously incorrect f
 	\label{Google_Soo}
 \end{figure}
 
+Along similar lines, I'm embarrased to admit that some of my students have asked the video creator the bridge's height.
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.5\columnwidth]{video_comments.png}
+\caption{
+Youtube video comments on 	https://www.youtube.com/watch?v=arxiDyDouHo}
+	\label{youtube_comments}
+\end{figure}
+
+
+
 
 \subsection{shadows}
-There are many shadows cast in the overhead photos of Sault St. Marie.  We can use some to estimate, by scaling, the height of the bridge to be...
+There are many shadows cast in the overhead photos of Sault St. Marie.  We can use some to estimate, by scaling, the height of the bridge to be:
+
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.5\columnwidth]{map-1.png}
+\caption{Sault Ste. Marie, Ontario, Canada. 46.543499, -84.341888
+The Hub trail bridge and football field are about 1000meters apart.
+	}
+%\label{linearized_swingtime_graph}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.5\columnwidth]{bridge-1.png}
+\caption{ Hub Trail
+Sault Ste. Marie, ON P6C 3A5, Canada
+46.546738, -84.342165	}
+%\label{linearized_swingtime_graph}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.5\columnwidth]{bridge-2.png}
+\caption{ Using Google Maps to measure the length of the Bridge deck's shadow.	}
+%\label{linearized_swingtime_graph}
+\end{figure}
+
+\begin{figure}[h]
+\centering
+	\includegraphics[width=0.5\columnwidth]{fieldgoal.png}
+\caption{ The shadow cast by the field goalposts on an (assumed) American footbal field. 
+750 North St
+Sault Ste. Marie, ON P6B 2C5, Canada
+46.541034, -84.332469	}
+%\label{linearized_swingtime_graph}
+\end{figure}
+
 
 % Anna Becker
 %\textit{This would need to be expanded and illustrated}
@@ -208,6 +243,10 @@ Pivot Interactives Library: Pendulum Investigation
 Version 1.252.0
 https://www.pivotinteractives.com/
 
+
+\bibitem{Kiiking}
+https://www.youtube.com/watch?v=UtRRHrEaBBA
+Kiiking. Meanwhile in Finland
 
 \bibitem{the_swing_Fragonard}
 	https://commons.wikimedia.org/wiki/File:Fragonard,\_The\_Swing.jpg
