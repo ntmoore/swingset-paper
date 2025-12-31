@@ -3,23 +3,18 @@
 % via 
 % 	https://publishingsupport.iopscience.iop.org/journals/physics-education/
 \documentclass[12pt]{iopart}
-%
-\usepackage{graphicx} % needed for figures
-%\usepackage{float}
-%\usepackage{units}
+\usepackage{graphicx}
 \usepackage{hyperref}
 
 \newcommand{\be}{\begin{equation}}
 \newcommand{\ee}{\end{equation}}
 \newcommand{\bea}{\begin{eqnarray}}
 \newcommand{\eea}{\end{eqnarray}}
-\newcommand{\degC}{^{\circ}C}
-%
 
 \begin{document}
 \title[Using Open Source Intelligence Techniques to evaluate Physics Calculations]{Using Open Source Intelligence Techniques to evaluate Physics Calculations}
 
-\author{Physics students (???) and Nathan T. Moore}
+\author{Physics students and Nathan T. Moore}
 
 \address{
 	Physics and General Engineering, 
@@ -33,24 +28,33 @@
 \end{indented}
 
 \begin{abstract}
-Checking the answer at the end of a calculation is an oft neglected part of solving physics problems, and getting students to engage in this behavior can be difficult when they are already intellectually tired. 
-The paper briefly describes a graphing, linearization, and control of variables activity related to pendulums, couched as ``swingset" design. 
-After a reliable $swingtime \sim \sqrt{length}$ model has been established, students apply the model to a youtube video to predict the height of a bridge. 
-Then, to reinforce the ideas of multiple representations, and multiple lines of evidence within an argument, students are asked to use Google Maps and other online resources to estimate the height of the bridge. 
+Checking the answer at the end of a calculation is an oft neglected part of solving physics problems, 
+and getting students to engage in this behavior can be difficult when they are already intellectually tired. 
+The paper briefly describes a graphing, linearization, and control of variables activity related to pendulums, 
+couched as ``swingset" design. 
+After a reliable $swingtime \sim \sqrt{length}$ model has been established, students apply the model 
+to a youtube video to predict the height of a bridge. 
+Then, to reinforce the ideas of multiple representations, and multiple lines of evidence within an argument, 
+students are asked to use Google Maps and other online resources to estimate the height of the bridge. 
 Looking for overlap between online estimations and physical models from the lab is powerful. 
-At the end of the exercise, students have had a brief introduction to ``Open Source Intelligence" techniques that are commonly used by news and intelligence organizations. 
+At the end of the exercise, students have had a brief introduction to ``Open Source Intelligence" 
+techniques that are commonly used by news and intelligence organizations. 
 \end{abstract}
 
 
 
 \section{Swingset Exercise}
-Early in a Physical Science or Introductory Physics-Mechanics class, we introduce and practice control of variables, graphing, and linearization concepts by asking students to think about designing a new swingset for an elementary school playground.  
-An exciting swingset takes a long time to swing back and forth and we call this ``swingtime" the output variable we want to be able to predict.
+Early in a Physical Science or Introductory Physics-Mechanics class, we introduce and practice control of variables, 
+graphing, and linearization concepts by asking students to think about designing a new swingset for an 
+elementary school playground.  
+An exciting swingset takes a long time to swing back and forth and we call this ``swingtime" the output variable 
+we want to be able to predict.
 Formally, a swingset is typically modeled as a pendulum with period 
 $T \sim \sqrt{L}$ 
 \cite{openstax_pendulum, pivot_pendulum} 
 but as this activity usually occurs in the first few weeks of the class, 
-we avoid any mention of the technical story that for small oscillations a pendulum's period is $T\simeq 2\pi \sqrt{L/g}$.
+we avoid any mention of the technical story that for small oscillations a pendulum's period is 
+$T\simeq 2\pi \sqrt{L/g}$.
 
 \begin{figure}[h]
 \centering
@@ -59,73 +63,117 @@ we avoid any mention of the technical story that for small oscillations a pendul
         %\includegraphics[]{Fragonard,_The_Swing.jpg}
 \caption{
 In North America, a ``swingset" or ``swing" is a mass-rope pendulum system that people enjoy using.
-        Swings have had an astonishingly long history of recreational use throughout many human cultures \cite{swings-wikipedia}.
+        Swings have had an astonishingly long history of recreational use throughout many human cultures 
+\cite{swings-wikipedia}.
 }
 \label{buffet}
 \end{figure}
 
-When asked about possible input variables on which swingtime might depend, students will often talk about mass, weight, initial height and angle, whether you start from rest or with an initial push, and length.  A video introduction to Estonia sport of Kiiking \cite{Kiiking} can be a great anchoring event for this disucssion.
-After brief investigations, the students typically settle on initial angle, mass, and length as the most important variables needed to predict swingtime.  
+When asked about possible input variables on which swingtime might depend, students will often talk about 
+mass, weight, initial height and angle, whether you start from rest or with an initial push, and length.  A video 
+introduction to Estonia sport of Kiiking \cite{Kiiking} can be a great anchoring event for this disucssion.
+After brief investigations, the students typically settle on initial angle, mass, and length as the most important 
+variables needed to predict swingtime.  
 With further data collection, the class can narrow down the length of the swing's cable as the most important variable.  
 
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\columnwidth]{linear_swingtime_graph.pdf}
 \caption{
-Typical student data, using metal washers and string to model the motion of a swingset.
-        Students are coached to measure the time associated with multiple ``there and back" swings and then divide to find an average time so that their reaction times (typically $\approx0.3 seconds$) can be ignored.
+	Typical student data, using metal washers and string to model the motion of a swingset.
+        	Students are coached to measure the time associated with multiple ``there and back" 
+	swings and then divide to find an average time so that their reaction times 
+	(typically $\approx0.3 seconds$ via \cite{human_benchmark) can be ignored.
         }
         \label{swingtime_graph}
 \end{figure}
 
-Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' data has been collected with metal washers and string, with none of the swingsets larger than about $100cm$ in length. The initial data in figure \ref{swingtime_graph} looks fairly linear, and when asked  to predict the swingtime for a $200cm$ length, students typically either draw a line or use a linear math model, also shown in figure \ref{swingtime_graph}.  
+Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' data has been collected 
+with metal washers and string, with none of the swingsets larger than about $100cm$ in length. The initial data in 
+figure \ref{swingtime_graph} looks fairly linear, and when asked  to predict the swingtime for a $200cm$ length, students 
+typically either draw a line or use a linear math model, also shown in figure \ref{swingtime_graph}.  
 
-This linear model fails at longer swingset lengths. Resolution comes via two pieces of data.  First, if a swingset has ``almost no length" students will generally volunteer that it takes ``almost no time" to swing back and forth.  This means that the $length=0$, $swingtime=0$ intercept is physically real and should be included in fitting efforts.  
+This linear model fails at longer swingset lengths. Resolution comes via two pieces of data.  
+First, if a swingset has ``almost no length" students will generally volunteer that it takes ``almost no time" to swing 
+back and forth.  This means that the $length=0$, $swingtime=0$ intercept is physically real and should be included 
+in fitting efforts.  
 
-Second, when results from swingset lengths of $200cm$, $300cm$ and $400cm$ are included in the graph, students can be coached to recollect that the data reminds them of a parabola that has been rotated to open towards the positive x-axis of the graph.  In Pre-Calculus or Algebra 2 classes this mathematical form is often written as a $y^2=x$ or $y=\sqrt{x}$ relationship.  
+Second, when results from swingset lengths of $200cm$, $300cm$ and $400cm$ are included in the graph, 
+students can be coached to recollect that the data reminds them of a parabola that has been rotated to 
+open towards the positive x-axis of the graph.  In Pre-Calculus or Algebra 2 classes this mathematical 
+form is often written as a $y^2=x$ or $y=\sqrt{x}$ relationship.  
 
-To test this ``curvy'' relationship between swingtime and length, we ask the students to create the graph shown in figure \ref{linearized_swingtime_graph} in which the data has been ``linearized'' by plotting $\sqrt{L}$ instead of $L$.  In our experience, many students have not seen a non-linear proportionality ``in the wild'' before, and this can be a challenging concept to discuss -- particularly when thinking about the units involved in linearized trendlines!   
+To test this ``curvy'' relationship between swingtime and length, we ask the students to create the graph 
+shown in figure \ref{linearized_swingtime_graph}, in which the data has been ``linearized'' by plotting $\sqrt{L}$ instead of $L$.  
+In our experience, many students have not seen a non-linear proportionality ``in the wild'' before, and this can 
+be a challenging concept to discuss -- particularly when thinking about the units involved in linearized trendlines!   
 
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\columnwidth]{linearized_swingtime_graph.pdf}
 \caption{
-	Linearized swingset data from a class.  Note that $200cm$, $300cm$ and $400cm$ lengths are included and described well by the $\sqrt{L}$ trendline -- so long as the initial release angle is small.  The ``almost no length" swingset that takes ``almost no time" to swing is also nicely included.   
+	Linearized swingset data from a class.  
+	Note that $200cm$, $300cm$ and $400cm$ lengths are included and described well by the $\sqrt{L}$ trendline -- so 
+	long as the initial release angle is small.  
+	The ``almost no length" swingset that takes ``almost no time" to swing is also nicely included.   
 	}
 	\label{linearized_swingtime_graph}
 \end{figure}
 
-A nice final test of the linearized model for swingtime is to use a $10m$ surveyor's tape measure as a 3-story high swingset.  As seen in figure \ref{linearized_swingtime_graph}, even this data is reasonably described by the linearized model.  Note, most of this work depends on the students using a relatively small initial release angle.  If students decide to release a swingset from horizontal, the $\sqrt{L}$ dependence will be harder to see, which is again visible in figure \ref{linearized_swingtime_graph}.
+A fun final test of the linearized model for swingtime is to use a $10m$ surveyor's tape measure as a 3-story high swingset.  
+As seen in figure \ref{linearized_swingtime_graph}, even this data is reasonably described by the linearized model.  
+Note, most of this work depends on the students using a relatively small initial release angle (unlike the Kiiking example).  
+If students decide to release a swingset 
+from horizontal, the $\sqrt{L}$ dependence will be harder to see, which is again visible in figure \ref{linearized_swingtime_graph}.
 
 
 \section{Predicting the height of a swingset}
-With a reliable model for swingsets developed, a common follow-up assignment is to estimate the height of a bridge or arch from video of people swinging below it.  Two specific examples we've used, one in Sault St. Marie, Canada \cite{swingset-sault-ste-marie}, and another near Moab, Utah \cite{swingset-Moab}, are available on youtube.  
+With a reliable model for swingsets developed, a common follow-up assignment is to estimate the height of a 
+bridge or arch from video of people swinging below it.  Two specific examples we've used, one in 
+Sault Ste. Marie, Canada \cite{swingset-sault-ste-marie}, and another near Moab, Utah \cite{swingset-Moab}, 
+are available on youtube.  
 
-At this point, from their data analysis, students know that swingtime, $T$, and swingset length, $L$, are described by an expression similar to the following (with slightly different slopes, depending on student measurements):
+At this point, from their data analysis, students know that swingtime, $T$, and swingset length, $L$, 
+are described by an expression similar to the following (with slightly different slopes, depending on student measurements):
 \bea
 T &\simeq& \left( 0.20\frac{seconds}{\sqrt{cm}} \right) \sqrt{L}, or\\
 L &\simeq& \left( 25 \frac{cm}{sec^2} \right) T^2.
 \eea
-Then, if a student is able to measure the time corresponding to half or a quarter of a swing from the video, they can use the model to predict the swing's height.  As an example, the man in the Sault Ste. Marie video seems to take about 5 seconds to make half a swing (from 0:36 to 0:40 in the video)\cite{details}.  With a period of $T=8s$, students can predict a swingset length of about $1600cm=16m$.  
-The video in Moab can be similarly analyzed although estimating even a quarter period in the Moab video is challenging..   
+Then, if a student is able to measure the time corresponding to half or a quarter of a swing from the video, they can use 
+the model to predict the swing's height.  As an example, the man in the Sault Ste. Marie video seems to take about 4 seconds 
+to make half a swing (from 0:36 to 0:40 in the video)\cite{details}.  With a period of $T \approx 8s$, students can predict 
+a swingset length of about $L \approx 1600cm = 16m$.  
+The video in Moab can be similarly analyzed, although estimating even a quarter period in the Moab video is challenging..   
 
 
 
 
 
 \section{Evaluating answer using Open Source Intelligence}
-Over the past few years, news organizations using ``open source intelligence techniques" have gained some notoriety.  One such organization, ``Bellingcat" (
+Over the past few years, news organizations using ``open source intelligence techniques" have gained some notoriety.  
+One such organization, ``Bellingcat" (
 \href{https://www.bellingcat.com/}{https://www.bellingcat.com/} and 
 \href{https://en.wikipedia.org/wiki/Bellingcat}{https://en.wikipedia.org/wiki/Bellingcat} ), 
-among many investigations, gained prominence by revealing the method by which Russian opposition political Alexey Navalny was poisoned in 2020 \href{https://www.bellingcat.com/resources/2020/12/14/navalny-fsb-methodology/}{https://www.bellingcat.com/resources/2020/12/14/navalny-fsb-methodology/}. 
+among many investigations, gained prominence by revealing the method by which Russian opposition political 
+Alexey Navalny was poisoned in 2020 
+\href{https://www.bellingcat.com/resources/2020/12/14/navalny-fsb-methodology/}{https://www.bellingcat.com/resources/2020/12/14/navalny-fsb-methodology/}. 
 This organization uses ``open source" information to engage in investigative journalism and fact-checking.  
-On their website, Bellingcat makes a large number of informational ``howto" articles available \href{https://www.bellingcat.com/category/resources/}{https://www.bellingcat.com/category/resources/}.
+On their website, Bellingcat makes a large number of informational ``howto" articles available 
+\href{https://www.bellingcat.com/category/resources/}{https://www.bellingcat.com/category/resources/}.
 
-Along similar lines, the United States Government Defense Mapping Agency published an unclassified Student Handbook on Photo Interpretation Principles \cite{USDMA_book}.  A 1996 copy of this handbook is available in many places online.  This book, written for novice cartographers, illustrates many ways to infer measurements based on aerial and satellite photographs.  This is a useful reference, given the abundance of information that Google Maps and similar sites make available.
+Along similar lines, the United States Government Defense Mapping Agency published an unclassified Student 
+Handbook on Photo Interpretation Principles \cite{USDMA_book}.  A 1996 copy of this handbook is available 
+in many places online.  This book, written for novice cartographers, illustrates many ways to infer measurements 
+based on aerial and satellite photographs.  This is a useful reference, given the abundance of information that 
+Google Maps and similar sites make available.
 
-Both of these resources use information that is freely available to anyone with an internet connection to investigate and test claims.  In the Physics classroom, this seems like an exciting, modern, and relevant place to make a connection to ``checking our answer" with techniques similar to those use to establish that chemical weapons were being used in the Syrian Civil war \cite{bellingcat_syria}.
+Both of these resources use information that is freely available to anyone with an internet connection to investigate 
+and test claims.  In the Physics classroom, this seems like an exciting, modern, and relevant place to make a connection 
+to ``checking our answer" with techniques similar to those use to establish that chemical weapons were being used in the 
+Syrian Civil war \cite{bellingcat_syria}.
 
-So at the end of this lab, I ask students to use some other way of knowing to check their answer for the height of the Moab arch or the pedestrian bridge in Sault St. Marie.  Here are a few of the conversations and student efforts that have resulted.
+So at the end of this lab, I ask students to use some other way of knowing to check their answer for the height of the 
+Moab arch or the pedestrian bridge in Sault Ste. Marie.  Here are a few of the conversations and student efforts that have resulted.
 
 \subsection{screen grab and scaling}
 Take a screenshot from the video, assume person is 5'8" ??? and then scale pixels to estimate height of bridge/arch
@@ -141,19 +189,20 @@ Or pine tree?
 %I found it difficult to find another factor to measuring the height of the arch in Moab.
 
 \subsection{geographic searching}
-Many students have done a google search for "height of Sault St. Marie bridge'' or similar.  Google seems to interpret this as the height of the "International" road bridge across the Soo locks 
-\href{https://en.wikipedia.org/wiki/Sault_Ste._Marie_International_Bridge}{https://en.wikipedia.org/wiki/Sault\_Ste.\_Marie\_International\_Bridge}
-, whch is reported to be 124 feet (38m) in height.  This is obviously not the correct bridge in the video.
+Many students have done a google search for "height of Sault Ste. Marie bridge'' or similar.  
+Google seems to interpret this as the height of the "International" road bridge across the Soo locks 
+\href{https://en.wikipedia.org/wiki/Sault_Ste._Marie_International_Bridge}{https://en.wikipedia.org/wiki/Sault\_Ste.\_Marie\_International\_Bridge}, 
+which is reported to be 124 feet (38m) in height.  This is obviously not the correct bridge in the video.
 \begin{figure}[h]
 \centering
 	\includegraphics[width=\columnwidth]{Google_International_Soo_bridge.png}
 \caption{
-Google results for ``height of Sault St. Marie bridge" are obviously incorrect for the pedestrian/bicycle bridge in question.
+Google results for ``height of Sault Ste. Marie bridge" are obviously incorrect for the pedestrian/bicycle bridge in question.
 	}
 	\label{Google_Soo}
 \end{figure}
 
-Along similar lines, I'm embarrased to admit that some of my students have asked the video creator the bridge's height.
+Along similar lines, I'm embarrassed to admit that some of my students have asked the video creator the bridge's height.
 \begin{figure}[h]
 \centering
 	\includegraphics[width=0.5\columnwidth]{video_comments.png}
@@ -166,7 +215,8 @@ Youtube video comments on 	https://www.youtube.com/watch?v=arxiDyDouHo}
 
 
 \subsection{shadows}
-There are many shadows cast in the overhead photos of Sault St. Marie.  We can use some to estimate, by scaling, the height of the bridge to be:
+There are many shadows cast in the overhead photos of Sault Ste. Marie.  
+We can use some to estimate, by scaling, the height of the bridge to be:
 
 
 \begin{figure}[h]
@@ -218,7 +268,8 @@ Sault Ste. Marie, ON P6B 2C5, Canada
 
 
 \subsection{geographic clues}
-The Moab arch video was taken at Arches National park.  Some students claim that the video matches the Gateway Arch??? which has known height.
+The Moab arch video was taken at Arches National park.  
+Some students claim that the video matches the Gateway Arch??? which has known height.
 
 
 \clearpage
@@ -243,7 +294,6 @@ Pivot Interactives Library: Pendulum Investigation
 Version 1.252.0
 https://www.pivotinteractives.com/
 
-
 \bibitem{Kiiking}
 https://www.youtube.com/watch?v=UtRRHrEaBBA
 Kiiking. Meanwhile in Finland
@@ -256,6 +306,9 @@ Kiiking. Meanwhile in Finland
 \bibitem{swings-wikipedia}
 	https://en.wikipedia.org/wiki/Swing\_(seat)
 		Swing (seat)
+
+\bibitem{human_benchmark}
+https://humanbenchmark.com/tests/reactiontime
 
 \bibitem{swingset-sault-ste-marie}
 https://www.youtube.com/watch?v=arxiDyDouHo
