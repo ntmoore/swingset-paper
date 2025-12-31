@@ -88,7 +88,7 @@ With further data collection, the class can narrow down the length of the swing'
         \label{swingtime_graph}
 \end{figure}
 
-Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' data has been collected 
+Data from a past class is given in figure \ref{swingtime_graph}. Thus far, all of the students' measurements have been collected 
 with metal washers and string, with none of the swingsets larger than about $100cm$ in length. The initial data in 
 figure \ref{swingtime_graph} looks fairly linear, and when asked  to predict the swingtime for a $200cm$ length, students 
 typically either draw a line or use a linear math model, also shown in figure \ref{swingtime_graph}.  
@@ -137,12 +137,12 @@ At this point, from their data analysis, students know that swingtime, $T$, and 
 are described by an expression similar to the following (with slightly different slopes, depending on student measurements):
 \bea
 T &\simeq& \left( 0.20\frac{seconds}{\sqrt{cm}} \right) \sqrt{L}, or\\
-L &\simeq& \left( 25 \frac{cm}{sec^2} \right) T^2.
+L &\simeq& \left( 25 \frac{cm}{sec^2} \right) T^2. \label{eq_for_L}
 \eea
 Then, if a student is able to measure the time corresponding to half or a quarter of a swing from the video, they can use 
-the model to predict the swing's height.  As an example, the man in the Sault Ste. Marie video seems to take about 4 seconds 
-to make half a swing (from 0:36 to 0:40 in the video)\cite{details}.  With a period of $T \approx 8s$, students can predict 
-a swingset length of about $L \approx 1600cm = 16m$.  
+the model to predict the swing's height.  As an example, the man in the Sault Ste. Marie video seems to take a little less than 4 seconds 
+to make half a swing (from 0:36 to 0:40 in the video).  With a period of $T \approx 7\pm1s$, students can predict 
+a swingset length of about $L \approx [900-1600]cm \approx 12\pm4m$. A more detailed calculation using video analysis \cite{details} gives a swingset length of $11.35\pm0.3m$. 
 The video in Moab can be similarly analyzed, although estimating even a quarter period in the Moab video is challenging..   
 
 
@@ -269,6 +269,37 @@ Some students claim that the video matches the Gateway Arch??? which has known h
 
 
 \clearpage
+\subsection{Conclusion}
+
+Table \ref{table-results} gives a summary of swingset/bridge/arch heights from various open source measurement approaches.  What's the real height of the Hub Trail Bridge in Sault Ste. Marie? The answer varies: Is there snow on the ground, is the creek up because of flooding, or has the grass been beaten down by the wind?  
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{length being measured/calculated} & \textbf{method} & \textbf{measurement }\\
+	\hline
+	Swingset rope, equation \ref{eq_for_L} & Youtube time & $12\pm4 m$ \\ 
+        \hline
+        Swingset rope, equation \ref{eq_for_L} & Video Analysis time & $11.35\pm0.3 m$\\ 
+        \hline
+        Bridge support tower & pixel scaling, man as reference & ???\\ 
+        \hline
+        Bridge deck above valley & shadows, football field? & ???\\ 
+	\hline
+        Bridge deck above valley & shadows, some other calibration??? & ???\\ 
+\hline
+	Valley depth & topographic map & \\
+\hline    
+\end{tabular}
+    \caption{Bridge height estimates}
+    \label{table:-results}
+\end{table}
+
+
+
+
+
 
 
 
@@ -318,7 +349,8 @@ World's Largest Rope Swing
 devinsupertramp (Devin Graham)
 Feb 15, 2012
 
-\bibitem{details} If you download the video from YouTube and import it into Vernier's LoggerPro, it looks like a half swing runs from 36.603s to 39.973s, a $T/2=3.37s$ or $T\approx6.74s$.  
+\bibitem{details} If you download the video from YouTube and import it into Vernier's LoggerPro, it looks like a half swing runs from 36.603s to 39.973s, a $T/2=3.37s$ or $T\approx6.74s$.  Video frames are 0.034s apart so it might be reasonable to assign an uncertainty of 0.07seconds to this measurement.  Using the small angle approximation in equation \ref{eq_for_L} then gives an estimate swingset length of  
+$L \approx \left( 25 \frac{cm}{sec^2} \right) (6.74\pm0.07s)^2 = [1112,1159]cm \approx 11.35 m \pm 0.3m$
 
 \bibitem{bellingcat-1}
 \href{https://www.bellingcat.com/}{https://www.bellingcat.com/} and 
